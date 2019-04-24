@@ -1,0 +1,63 @@
+{
+  "name": "sketch-rename-layers",
+  "version": "0.0.0",
+  "description": "A Sketch plugin to automate layer renaming",
+  "keywords": [
+    "plugin",
+    "sketch",
+    "sketch-plugin-helper"
+  ],
+  "license": "MIT",
+  "author": "Lim Yuan Qing",
+  "repository": "yuanqing/sketch-rename-layers",
+  "devDependencies": {
+    "sketch-plugin-helper": "*"
+  },
+  "scripts": {
+    "build": "sph build",
+    "fix": "sph lint --fix",
+    "lint": "sph lint",
+    "symlink": "sph symlink",
+    "unlink": "sph symlink --delete",
+    "version": "sph version",
+    "watch": "sph build --watch"
+  },
+  "sketch-plugin-helper": {
+    "name": "Rename Layers",
+    "menu": [
+      {
+        "handler": "rename-selected-layers",
+        "label": "Rename Selected Layers"
+      },
+      {
+        "handler": "find-and-replace-layer-names",
+        "label": "Find & Replace Layer Names"
+      },
+      "-",
+      {
+        "handler": "rename-artboards",
+        "label": "Rename Artboards"
+      },
+      "-",
+      {
+        "handler": "reset-settings",
+        "label": "Reset Settings"
+      }
+    ],
+    "defaultSettings": {
+      "findAndReplaceLayerNames": {
+        "findText": "",
+        "isCaseSensitive": true,
+        "replaceText": "",
+        "scope": "Current page"
+      },
+      "renameArtboards": {
+        "layerNamePattern": "%y.%yx – %n",
+        "scope": "Current page"
+      },
+      "renameSelectedLayers": {
+        "layerNamePattern": "%y.%yx – %n"
+      }
+    }
+  }
+}

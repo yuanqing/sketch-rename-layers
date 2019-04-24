@@ -1,0 +1,48 @@
+{
+  "name": "Rename Layers",
+  "description": "A Sketch plugin to automate layer renaming",
+  "author": "Lim Yuan Qing",
+  "homepage": "https://github.com/yuanqing/sketch-rename-layers",
+  "version": "0.0.0",
+  "identifier": "yuanqing.sketch-rename-layers",
+  "appcast": "https://raw.githubusercontent.com/yuanqing/sketch-rename-layers/master/appcast.xml",
+  "bundleVersion": 1,
+  "disableCocoaScriptPreprocessor": true,
+  "commands": [
+    {
+      "name": "Rename Selected Layers",
+      "identifier": "yuanqing.sketch-rename-layers.rename-selected-layers",
+      "script": "plugin.js",
+      "handler": "rename-selected-layers"
+    },
+    {
+      "name": "Find & Replace Layer Names",
+      "identifier": "yuanqing.sketch-rename-layers.find-and-replace-layer-names",
+      "script": "plugin.js",
+      "handler": "find-and-replace-layer-names"
+    },
+    {
+      "name": "Rename Artboards",
+      "identifier": "yuanqing.sketch-rename-layers.rename-artboards",
+      "script": "plugin.js",
+      "handler": "rename-artboards"
+    },
+    {
+      "name": "Reset Settings",
+      "identifier": "yuanqing.sketch-rename-layers.reset-settings",
+      "script": "plugin.js",
+      "handler": "reset-settings"
+    }
+  ],
+  "menu": {
+    "title": "Rename Layers",
+    "items": [
+      "yuanqing.sketch-rename-layers.rename-selected-layers",
+      "yuanqing.sketch-rename-layers.find-and-replace-layer-names",
+      "-",
+      "yuanqing.sketch-rename-layers.rename-artboards",
+      "-",
+      "yuanqing.sketch-rename-layers.reset-settings"
+    ]
+  }
+}
