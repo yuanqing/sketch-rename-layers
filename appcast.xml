@@ -5,5 +5,10 @@
     <link>https://raw.githubusercontent.com/yuanqing/sketch-rename-layers/master/appcast.xml</link>
     <description>A Sketch plugin to automate layer renaming</description>
     <language>en</language>
+    <item>
+      <title>v0.0.1</title>
+      <description>0.0.1</description>
+      <enclosure url="https://github.com/yuanqing/sketch-rename-layers/archive/v0.0.1.zip" sparkle:version="0.0.1"/>
+    </item>
   </channel>
 </rss>

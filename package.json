@@ -1,6 +1,6 @@
 {
   "name": "sketch-rename-layers",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A Sketch plugin to automate layer renaming",
   "keywords": [
     "plugin",
