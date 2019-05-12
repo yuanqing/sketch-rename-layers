@@ -1,4 +1,4 @@
-import { getAbsoluteCoordinates } from 'sketch-plugin-helper'
+import { calculateCoordinatesRelativeToPage } from 'sketch-plugin-helper'
 
 export default function renameLayers ({ layers, layerNamePattern }) {
   preprocessLayers(layers).forEach(function ({ layer, x, xy, y, yx }, index) {
@@ -18,7 +18,7 @@ export default function renameLayers ({ layers, layerNamePattern }) {
 
 function preprocessLayers (layers) {
   const layersWithAbsoluteCoordinates = layers.map(function (layer) {
-    const { x, y } = getAbsoluteCoordinates(layer)
+    const { x, y } = calculateCoordinatesRelativeToPage(layer)
     return {
       x,
       y,
