@@ -1,5 +1,5 @@
 import {
-  iterateNestedLayers,
+  iterateChildLayers,
   getLayersOnCurrentPage,
   getSelectedLayers,
   openSettingsDialog,
@@ -61,7 +61,7 @@ export default function findAndReplaceLayerNames () {
   if (scope === 'Selected layers') {
     selectedLayers.forEach(callback)
   } else {
-    iterateNestedLayers(getLayersOnCurrentPage(), callback)
+    iterateChildLayers(getLayersOnCurrentPage(), callback)
   }
   saveTemporarySettings(settings)
   showSuccessMessage(`Renamed ${count} layer${count === 1 ? '' : 's'}`)
