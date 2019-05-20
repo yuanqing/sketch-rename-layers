@@ -1,4 +1,4 @@
-# Rename Layers
+# Rename Layers [![npm Version](https://badgen.net/npm/v/sketch-rename-layers)](https://www.npmjs.org/package/sketch-rename-layers)
 
 > A Sketch plugin to automate layer renaming
 
