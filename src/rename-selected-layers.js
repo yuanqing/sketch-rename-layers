@@ -17,7 +17,7 @@ export default function renameSelectedLayers () {
   }
   const settings = openSettingsDialog({
     title: 'Rename Selected Layers',
-    inputs: [
+    formFields: [
       {
         type: TEXT_BOX,
         key: 'renameSelectedLayers.layerNamePattern',

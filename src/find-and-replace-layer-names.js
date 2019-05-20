@@ -15,7 +15,7 @@ export default function findAndReplaceLayerNames () {
   const hasSelection = selectedLayers.length !== 0
   const settings = openSettingsDialog({
     title: 'Find & Replace Layer Names',
-    inputs: [
+    formFields: [
       {
         type: TEXT_BOX,
         key: 'findAndReplaceLayerNames.findText',

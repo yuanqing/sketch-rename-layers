@@ -15,7 +15,7 @@ export default function renameArtboards () {
   const hasSelection = selectedArtboards.length !== 0
   const settings = openSettingsDialog({
     title: 'Rename Artboards',
-    inputs: [
+    formFields: [
       {
         type: TEXT_BOX,
         key: 'renameArtboards.layerNamePattern',

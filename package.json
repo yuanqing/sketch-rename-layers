@@ -14,13 +14,16 @@
     "src"
   ],
   "scripts": {
-    "build": "sph build",
-    "fix": "sph lint --fix",
-    "lint": "sph lint",
-    "symlink": "sph symlink",
-    "unlink": "sph symlink --delete",
-    "version": "sph version",
-    "watch": "sph build --watch"
+    "build": "sketch build",
+    "fix": "sketch lint --fix",
+    "handler": "sketch handler",
+    "lint": "sketch lint",
+    "script": "sketch script",
+    "symlink": "sketch symlink",
+    "test": "sketch test",
+    "unlink": "sketch symlink --delete",
+    "version": "sketch version",
+    "watch": "sketch build --watch"
   },
   "devDependencies": {
     "sketch-plugin-helper": "*"
@@ -30,21 +33,21 @@
     "menu": [
       {
         "handler": "rename-selected-layers",
-        "label": "Rename Selected Layers"
+        "name": "Rename Selected Layers"
       },
       {
         "handler": "find-and-replace-layer-names",
-        "label": "Find & Replace Layer Names"
+        "name": "Find & Replace Layer Names"
       },
       "-",
       {
         "handler": "rename-artboards",
-        "label": "Rename Artboards"
+        "name": "Rename Artboards"
       },
       "-",
       {
         "handler": "reset-settings",
-        "label": "Reset Settings"
+        "name": "Reset Settings"
       }
     ],
     "defaultSettings": {
